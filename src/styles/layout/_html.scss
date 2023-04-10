@@ -1,0 +1,6 @@
+@use "../utils/shared" as *;
+
+body {
+  background-color: $primary-color;
+  user-select: none;
+}

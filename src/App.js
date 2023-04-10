@@ -1,18 +1,14 @@
 /*---- Imported components ----*/
-import GalleryAlt from "./components/gallery2/GalleryAlt";
-
-/*---- Imported array ----*/
-import GalleryItemListAlt from "./components/gallery2/GalleryItemListAlt";
-import GalleryFinal from "./components/gallery3/GalleryFinal";
-
+import NavBar from "./components/navbar/NavBar";
 /*---- Imported styles ----*/
 import "./styles/styles.scss";
 
 function App() {
   return (
     <div className="App">
+      <NavBar />
       {/* <GalleryAlt slides={GalleryItemListAlt} /> */}
-      <GalleryFinal slides={GalleryItemListAlt} />
+      {/* <GalleryFinal slides={GalleryItemListAlt} /> */}
     </div>
   );
 }

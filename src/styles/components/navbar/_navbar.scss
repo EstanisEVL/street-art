@@ -1,0 +1,53 @@
+@use "../../utils/shared" as *;
+
+.header {
+  background-color: $secondary-color;
+  display: flex;
+  justify-content: center;
+  .nav {
+    width: 80%;
+    color: $main-white;
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+  }
+  .brand {
+    max-width: 20%;
+  }
+  .categories-container {
+    max-width: 80%;
+    .categories-ul {
+      display: flex;
+      gap: 4rem;
+      list-style-type: none;
+      li {
+        a {
+          color: $secondary-color-dark;
+          cursor: pointer;
+          position: relative;
+          padding-bottom: 0.25rem;
+          transition: all 0.3s ease;
+          &:hover {
+            color: $main-white;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: $main-white;
+            transition: width 0.3s ease-out;
+          }
+          &:hover::before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
