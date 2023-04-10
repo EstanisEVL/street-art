@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+/*---- Imported components ----*/
+import GalleryAlt from "./components/gallery2/GalleryAlt";
+
+/*---- Imported array ----*/
+import GalleryItemListAlt from "./components/gallery2/GalleryItemListAlt";
+import GalleryFinal from "./components/gallery3/GalleryFinal";
+
+/*---- Imported styles ----*/
+import "./styles/styles.scss";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <GalleryAlt slides={GalleryItemListAlt} /> */}
+      <GalleryFinal slides={GalleryItemListAlt} />
     </div>
   );
 }

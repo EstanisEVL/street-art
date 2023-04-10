@@ -1,0 +1,6 @@
+@mixin arrow_anim($animation, $duration, $method, $times) {
+  animation-name: $animation;
+  animation-duration: $duration;
+  animation-timing-function: $method;
+  animation-iteration-count: $times;
+}

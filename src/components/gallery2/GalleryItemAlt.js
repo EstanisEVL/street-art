@@ -1,0 +1,27 @@
+const GalleryItemAlt = ({ slide, index, visible }) => {
+  return (
+    <>
+      {slide.slice(index, visible).map((item, index) => {
+        return (
+          <div className="gallery_item" key={item.id}>
+            {/* <div className='spinloader medium'>
+                ACÁ VA EL SPINNER
+              </div> */}
+
+            <div className="openi_name">
+              <span>{item.title}</span>
+            </div>
+
+            <div className="openi_link"></div>
+
+            <div className="openi_bg slideshow-bg">
+              <img src={item.img} alt={item.alt} />
+            </div>
+          </div>
+        );
+      })}
+    </>
+  );
+};
+
+export default GalleryItemAlt;

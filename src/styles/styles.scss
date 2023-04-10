@@ -1,0 +1,9 @@
+/*---- Base ----*/
+@use "./base/reset";
+
+/*---- Components ----*/
+@use "./components/titles/partTitles";
+@use "./components/gallery/gallery";
+@use "./components/gallery/arrow";
+@use "./components/gallery/galleryGrid";
+@use "./components/gallery/galleryItem";

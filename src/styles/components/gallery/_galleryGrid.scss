@@ -1,0 +1,20 @@
+@use "../../utils/shared" as *;
+
+.gallery_grid {
+  display: flex;
+  height: 80rem;
+  max-height: 80rem;
+  .grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 40rem);
+    grid-template-rows: 40rem 40rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 40rem;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    background-color: #ccc;
+  }
+}

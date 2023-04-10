@@ -1,0 +1,92 @@
+@use "../../utils/shared" as *;
+
+.gallery_item {
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 40rem;
+  position: relative;
+  max-width: 40rem;
+  overflow: hidden;
+  transform-origin: left center 0px;
+  transform: perspective(5rem) rotateY(90deg);
+  animation: swing 0.5s cubic-bezier(0.15, 0.25, 0.5, 0.75) forwards;
+  @keyframes swing {
+    to {
+      transform: perspective(10rem) rotateX(0deg);
+    }
+  }
+  &:hover {
+    .openi_bg {
+      img {
+        opacity: 0.4;
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  .spinloader {
+  }
+
+  .medium {
+  }
+
+  .openi_name {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 90;
+    span {
+      font-family: $secondary-font;
+      font-size: 3rem;
+      padding: 0 2.5rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .openi_link {
+    background-image: url("../../../assets/imgs/external-link.png");
+    background-repeat: no-repeat;
+    font-size: 1.6rem;
+    height: 2.6rem;
+    width: 2.6rem;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-left: -1.3rem;
+    vertical-align: baseline;
+    z-index: 90;
+  }
+
+  .openi_bg {
+    background: #000;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    .slideshow-bg {
+      height: 100%;
+      opacity: 1;
+      visibility: inherit;
+      width: 100%;
+      z-index: 999;
+    }
+    img {
+      height: 100%;
+      opacity: 0.7;
+      width: 100%;
+      z-index: 1;
+      transition: opacity 0.3s ease, 3s transform ease-out;
+    }
+  }
+}
+
+.active {
+  // opacity: 1;
+  // transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.00125, 0, 0, 0, 1);
+  // transform-origin: right center 0px;
+  // transform: scale(1);
+}

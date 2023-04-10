@@ -1,0 +1,90 @@
+@use "../../utils/shared" as *;
+
+.galleries {
+  .resizable-part {
+    position: relative;
+    .error_message {
+      position: absolute;
+    }
+
+    .innercontent-part {
+      position: relative;
+
+      .opengalleryct {
+        position: inherit;
+
+        .drag_track {
+          background-image: url("../../../assets/imgs/drag-track.png");
+          pointer-events: none;
+          height: 2px;
+          width: 100%;
+          z-index: 90;
+          position: absolute;
+          top: 50%;
+          margin-top: -1px;
+        }
+        .drag_cursor-container {
+          width: 100%;
+          height: 66px;
+          margin-top: -33px;
+          top: 50%;
+          position: absolute;
+          z-index: 100;
+          .drag_cursor {
+            cursor: grab;
+            position: absolute;
+            top: 50%;
+            margin-top: -33px;
+            z-index: 100;
+            width: 66px;
+            height: 66px;
+            overflow: hidden;
+            transform: matrix(1, 0, 0, 1, 60, 0);
+            &:hover {
+              .dragbg {
+                transform: matrix(1, 0, 0, 1, 0, 0);
+                transition: transform 0.3s ease;
+              }
+              .dragarrow {
+                opacity: 1;
+                transform: matrix(1, 0, 0, 1, 0, 0);
+                transition: all 0.3s linear;
+              }
+            }
+            .dragbg {
+              background-image: url("../../../assets/imgs/resources.png");
+              background-position: 0 -248px;
+              background-repeat: no-repeat;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-top: -28px;
+              margin-left: -27px;
+              height: 56px;
+              width: 54px;
+              transform: matrix(0.3, 0, 0, 0.3, 0, 0);
+              user-select: none;
+              vertical-align: baseline;
+              transition: transform 0.3s ease 0.15s;
+            }
+            .dragarrow {
+              background-image: url("../../../assets/imgs/resources.png");
+              background-position: 0 -231px;
+              background-repeat: no-repeat;
+              top: 26px;
+              left: 17px;
+              position: absolute;
+              height: 15px;
+              width: 32px;
+              opacity: 0;
+              transform: matrix(0.5, 0, 0, 0.5, 0, 0);
+              user-select: none;
+              vertical-align: baseline;
+              transition: all 0.1s linear;
+            }
+          }
+        }
+      }
+    }
+  }
+}

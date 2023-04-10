@@ -1,0 +1,25 @@
+/*---- Imported array ----*/
+import { SocialItemList as socials } from "./SocialItemList";
+
+const Socials = () => {
+  return (
+    <ul className="share">
+      {socials.map((social, index) => {
+        return (
+          <li className={social.class} key={index}>
+            <a
+              // className={social.class}
+              index={social.id}
+              href={social.href}
+              target="true"
+            >
+              {social.svg}
+            </a>
+          </li>
+        );
+      })}
+    </ul>
+  );
+};
+
+export default Socials;
