@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/street-art/static/css/main.28d442c9.css",
+    "main.css": "/street-art/static/css/main.cc36cd91.css",
     "main.js": "/street-art/static/js/main.e5712bd6.js",
     "static/media/hero-img-frida.jpg": "/street-art/static/media/hero-img-frida.9f244f50cb92c7a16036.jpg",
     "static/media/brand-logo.svg": "/street-art/static/media/brand-logo.eaeeee5e8baf44d7c04dc8b51a1a8431.svg",
@@ -10,11 +10,11 @@
     "index.html": "/street-art/index.html",
     "static/media/google+icon.svg": "/street-art/static/media/google+icon.f60fa71407f8fdf7dc7053dd271a5117.svg",
     "static/media/facebook.svg": "/street-art/static/media/facebook.6b0f0a3a00ead30ac8cb32684f080543.svg",
-    "main.28d442c9.css.map": "/street-art/static/css/main.28d442c9.css.map",
+    "main.cc36cd91.css.map": "/street-art/static/css/main.cc36cd91.css.map",
     "main.e5712bd6.js.map": "/street-art/static/js/main.e5712bd6.js.map"
   },
   "entrypoints": [
-    "static/css/main.28d442c9.css",
+    "static/css/main.cc36cd91.css",
     "static/js/main.e5712bd6.js"
   ]
 }
