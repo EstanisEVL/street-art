@@ -1,50 +1,134 @@
 @use "../../utils/shared" as *;
 
-.header {
-  background-color: $secondary-color;
-  display: flex;
-  justify-content: center;
-  .nav {
-    width: 80%;
-    color: $main-white;
-    font-family: "Oswald", sans-serif;
-    font-size: 2rem;
+@media only screen and (max-width: 649px) {
+  .header {
+    background-color: $secondary-color;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 3rem 0;
+    min-height: 40vh;
+    .nav {
+      width: 90%;
+      color: $main-white;
+      font-family: "Oswald", sans-serif;
+      font-size: $fz-title;
+      font-weight: 600;
+      display: grid;
+      grid-template-columns: 70% 30%;
+      grid-template-rows: 80% 20%;
+      column-gap: 1rem;
+      row-gap: 5rem;
+      grid-template-areas:
+        "categories brand"
+        "socials .";
+      .categories-container {
+        grid-area: categories;
+        .categories-ul {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+          list-style-type: none;
+          li {
+            a {
+              color: $secondary-color-dark;
+              cursor: pointer;
+              position: relative;
+              padding-bottom: 0.25rem;
+              transition: all 0.3s ease;
+              &:hover {
+                color: $main-white;
+              }
+              &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 2px;
+                background-color: $main-white;
+                transition: width 0.3s ease-out;
+              }
+              &:hover::before {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      .brand {
+        grid-area: brand;
+        max-width: 100%;
+      }
+      .socials {
+        grid-area: socials;
+        display: flex;
+        align-items: center;
+      }
+    }
   }
-  .brand {
-    max-width: 20%;
-  }
-  .categories-container {
-    max-width: 80%;
-    .categories-ul {
+}
+
+@media only screen and (min-width: 650px) {
+  .header {
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: center;
+    .nav {
+      width: 80%;
+      color: $main-white;
+      font-family: "Oswald", sans-serif;
+      font-size: $fz-title;
+      font-weight: 600;
       display: flex;
-      gap: 4rem;
-      list-style-type: none;
-      li {
-        a {
-          color: $secondary-color-dark;
-          cursor: pointer;
-          position: relative;
-          padding-bottom: 0.25rem;
-          transition: all 0.3s ease;
-          &:hover {
-            color: $main-white;
-          }
-          &::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 0;
-            height: 2px;
-            background-color: $main-white;
-            transition: width 0.3s ease-out;
-          }
-          &:hover::before {
-            width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 0;
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+        justify-content: center;
+      }
+      .brand {
+        max-width: 20%;
+        @media screen and (max-width: 1000px) {
+          display: none;
+        }
+      }
+      .categories-container {
+        max-width: 80%;
+        display: flex;
+        justify-content: center;
+        @media screen and (max-width: 1000px) {
+          width: 100%;
+        }
+        .categories-ul {
+          display: flex;
+          // flex-wrap: wrap;
+          gap: 4rem;
+          list-style-type: none;
+          li {
+            a {
+              color: $secondary-color-dark;
+              cursor: pointer;
+              position: relative;
+              padding-bottom: 0.25rem;
+              transition: all 0.3s ease;
+              &:hover {
+                color: $main-white;
+              }
+              &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 2px;
+                background-color: $main-white;
+                transition: width 0.3s ease-out;
+              }
+              &:hover::before {
+                width: 100%;
+              }
+            }
           }
         }
       }

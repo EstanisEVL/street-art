@@ -1,0 +1,30 @@
+@use "../../utils/shared" as *;
+
+.home_scroll {
+  position: fixed;
+  bottom: 300px;
+  left: 50%;
+  z-index: 51;
+  cursor: pointer;
+  margin-left: -42px;
+  .hero_btn {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-origin: padding-box;
+    background-image: url("../../../assets/imgs/scroll-sprite.png");
+    background-repeat: no-repeat;
+    background-position-x: -2295px;
+    background-position-y: 0px;
+    background-size: auto;
+    width: 85px;
+    height: 86px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    opacity: 1;
+    vertical-align: baseline;
+    visibility: visible;
+    &:hover {
+      background-position-x: -1020px;
+    }
+  }
+}

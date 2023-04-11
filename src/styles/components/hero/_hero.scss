@@ -1,0 +1,41 @@
+@use "../../utils/shared" as *;
+
+.hero-container {
+  max-width: 100%;
+  font-family: $primary-font;
+  height: calc(100% - 107px);
+  line-height: normal;
+  opacity: 1;
+  position: fixed;
+  transform: translate3d(0px, 0px, 0px) scale(1);
+  vertical-align: baseline;
+  visibility: visible;
+  width: 100%;
+  .hero_img-container {
+    img {
+      max-width: 100%;
+      min-height: 100%;
+      position: absolute;
+    }
+  }
+  .hero_wrapper-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    top: 10%;
+    left: 5%;
+    width: 90%;
+    position: absolute;
+    vertical-align: baseline;
+    .title {
+      color: $main-white;
+      font-size: 4rem;
+      font-weight: 600;
+      text-align: center;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
