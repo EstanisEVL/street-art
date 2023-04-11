@@ -1,20 +1,46 @@
 {
   "files": {
-    "main.css": "/street-art/static/css/main.cc36cd91.css",
-    "main.js": "/street-art/static/js/main.e5712bd6.js",
+    "main.css": "/street-art/static/css/main.4a0f1fee.css",
+    "main.js": "/street-art/static/js/main.d53bca46.js",
     "static/media/hero-img-frida.jpg": "/street-art/static/media/hero-img-frida.9f244f50cb92c7a16036.jpg",
     "static/media/brand-logo.svg": "/street-art/static/media/brand-logo.eaeeee5e8baf44d7c04dc8b51a1a8431.svg",
     "static/media/hero-logo.svg": "/street-art/static/media/hero-logo.1a4b5411165d9ad4331ee7c2d885ea61.svg",
+    "static/media/img10.jpg": "/street-art/static/media/img10.618a384ac4b6e09070d3.jpg",
+    "static/media/img1.jpg": "/street-art/static/media/img1.a961c7c30724c0a36320.jpg",
+    "static/media/img22.jpg": "/street-art/static/media/img22.c9e62323d174385826ce.jpg",
+    "static/media/img12.jpg": "/street-art/static/media/img12.ee8bc2726fabae4d71a8.jpg",
+    "static/media/img19.jpg": "/street-art/static/media/img19.8f47bd223bb8f3f8b3d8.jpg",
+    "static/media/img4.jpg": "/street-art/static/media/img4.00632a912076e579080a.jpg",
+    "static/media/img18.jpg": "/street-art/static/media/img18.9b62c085f9bb25de9f2a.jpg",
+    "static/media/img21.jpg": "/street-art/static/media/img21.187f2fc03a5e0a82f1f3.jpg",
+    "static/media/img20.jpg": "/street-art/static/media/img20.cabfa023e4174080f841.jpg",
+    "static/media/img5.jpg": "/street-art/static/media/img5.882da3537446710bfd87.jpg",
+    "static/media/img8.jpg": "/street-art/static/media/img8.2616030a214ec67f5662.jpg",
+    "static/media/img24.jpg": "/street-art/static/media/img24.906889ca7c1eb2e94564.jpg",
+    "static/media/img14.jpg": "/street-art/static/media/img14.324f4bc9959b62b44fbc.jpg",
+    "static/media/img3.jpg": "/street-art/static/media/img3.f5933c6402d4d41eb0f1.jpg",
     "static/media/scroll-sprite.png": "/street-art/static/media/scroll-sprite.b9fa82b07b6e1a24d689.png",
+    "static/media/img11.jpg": "/street-art/static/media/img11.f010d52cdde4e5faa608.jpg",
+    "static/media/img9.jpg": "/street-art/static/media/img9.344ae0519e124ea9e3e8.jpg",
+    "static/media/img6.jpg": "/street-art/static/media/img6.bc42fe7db208300b7d36.jpg",
+    "static/media/img13.jpg": "/street-art/static/media/img13.efedb492bd2c1d61b27a.jpg",
+    "static/media/img2.jpg": "/street-art/static/media/img2.194ef829a5524e66c766.jpg",
+    "static/media/img7.jpg": "/street-art/static/media/img7.a5640d0cd08d0c0c7878.jpg",
+    "static/media/img17.jpg": "/street-art/static/media/img17.77cce1417d84b3717210.jpg",
+    "static/media/img15.jpg": "/street-art/static/media/img15.428f6dc1d32419ab4093.jpg",
+    "static/media/img16.jpg": "/street-art/static/media/img16.68cc29972afe55e558ba.jpg",
+    "static/media/img23.jpg": "/street-art/static/media/img23.c78aa777dde42ee70818.jpg",
     "static/media/twitter.svg": "/street-art/static/media/twitter.940cfd0b0c75b26e14867a407949ec2b.svg",
     "index.html": "/street-art/index.html",
     "static/media/google+icon.svg": "/street-art/static/media/google+icon.f60fa71407f8fdf7dc7053dd271a5117.svg",
     "static/media/facebook.svg": "/street-art/static/media/facebook.6b0f0a3a00ead30ac8cb32684f080543.svg",
-    "main.cc36cd91.css.map": "/street-art/static/css/main.cc36cd91.css.map",
-    "main.e5712bd6.js.map": "/street-art/static/js/main.e5712bd6.js.map"
+    "static/media/left-arrow.svg": "/street-art/static/media/left-arrow.f02c498db2ed9b8dcd69a8e79d23d6a5.svg",
+    "static/media/right-arrow.svg": "/street-art/static/media/right-arrow.f02c498db2ed9b8dcd69a8e79d23d6a5.svg",
+    "main.4a0f1fee.css.map": "/street-art/static/css/main.4a0f1fee.css.map",
+    "main.d53bca46.js.map": "/street-art/static/js/main.d53bca46.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc36cd91.css",
-    "static/js/main.e5712bd6.js"
+    "static/css/main.4a0f1fee.css",
+    "static/js/main.d53bca46.js"
   ]
 }
